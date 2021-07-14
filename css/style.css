@@ -247,7 +247,7 @@ Section-One-Style
 --------------------*/
 
 .extra-section-1 {
-    background-image: url("/images/match.png");
+    background-image: url("../images/New-Section/FDP-The_Vision_Website_cover.avif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -478,7 +478,7 @@ Section-two-Style
     }
     /* Extra-section  */
     .extra-section-1 {
-        background-image: url("/images/match.png");
+        background-image: url("../images/New-Section/FDP-The_Vision_Website_cover.avif");
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
@@ -613,7 +613,7 @@ Section-two-Style
     }
     /* Extra-section  */
     .extra-section-1 {
-        background-image: url("/images/match.png");
+        background-image: url("../images/New-Section/FDP-The_Vision_Website_cover.avif");
         background-repeat: no-repeat;
         background-size: cover;
         height: 600px;

@@ -398,6 +398,7 @@ Section-two-Style
 @media screen and (max-width:688px) {
     body {
         max-width: 100%;
+        margin: 0;
     }
     .menubar {
         display: none;
@@ -417,7 +418,7 @@ Section-two-Style
         list-style: none;
         padding: 0;
         position: absolute;
-        width: 300px;
+        width: 280px;
         background-color: #080808;
         z-index: 20;
     }
@@ -470,12 +471,12 @@ Section-two-Style
     }
     /* Player-list style  */
     .players {
-        max-width: 688px;
+        display: flex;
+        flex-direction: column;
     }
-    .players {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+    .player {
+        width: 320px;
+        padding: 10px;
     }
     /* Highlighted-Matche-Style  */
     .highlight-match {
@@ -486,8 +487,8 @@ Section-two-Style
     .highlight-details {
         margin-left: 2em;
     }
-    .highlight-details h1 {
-        font-size: 40px;
+    .highlight-details h2 {
+        font-size: 30px;
         color: #0A0826;
         margin: 0;
     }
@@ -498,9 +499,6 @@ Section-two-Style
     .highlight-thumbnail img {
         width: 320px;
         height: 280px;
-    }
-    .highlight-thumbnail {
-        margin-left: 2em;
     }
     /* Extra-section  */
     .extra-section-1 {
@@ -517,7 +515,7 @@ Section-two-Style
         position: absolute;
         top: 2em;
         left: 2em;
-        width: 300px;
+        width: 280px;
         height: 300px;
     }
     .fifa-details h2 {

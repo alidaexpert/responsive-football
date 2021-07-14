@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+
+/*------------------
+ Header Style 
+ ------------------- */
+
+.head-container {
+    height: 677px;
+    background-color: #2D25A0;
+}
+
+
+/*-----------------
+ Menubar Style  
+ ------------------*/
+
+.menubar-container {
+    padding-top: 42px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menubar {
+    width: 1163px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin-right: 36px;
+}
+
+.login-button {
+    width: 123px;
+    height: 44px;
+    background-color: #E02C6D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.login img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+
+/*--------------
+Header-Info-Style
+---------------------*/
+
+.header-info {
+    width: 1163px;
+    margin-left: 110px;
+    margin-top: 40px;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-details {
+    padding: 0 10vh;
+}
+
+.header-details h1 {
+    margin: 25px 0;
+    color: white;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.watch {
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    transition: 1s;
+}
+
+
+/*-------------
+Header animation 
+------------------- */
+
+.header-info:hover .header-details {
+    animation: header-text 3s ease-in 1 alternate;
+}
+
+@keyframes header-text {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+.watch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aliceblue;
+    transition: 1s;
+    z-index: -1;
+}
+
+.watch:hover {
+    color: #E02C6D;
+}
+
+.watch:hover span {
+    width: 100%;
+}
+
+.header-image img {
+    width: 556.01px;
+    height: 438px;
+}
+
+.header-info:hover .header-image img {
+    animation: football 3s ease-out 1 alternate;
+}
+
+@keyframes football {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*----------------
+player-list style  
+---------------------*/
+
+.players-list {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.player {
+    width: 300px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+}
+
+.player-name {
+    margin: 10px 0;
+    font-size: 28px;
+    color: #18191F;
+}
+
+.player-info {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+
+/*-----------------
+ Highlighted-Matches  
+ --------------------*/
+
+.highlight-match {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10em;
+}
+
+.highlight-details {
+    margin-left: 12em;
+}
+
+.highlight-details h1 {
+    padding-right: 80px;
+    width: 460px;
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0;
+}
+
+.player-info.highlight {
+    padding-right: 6em;
+    margin-bottom: 2em;
+}
+
+.highlight-thumbnail img {
+    width: 567px;
+    height: 427px;
+}
+
+
+/*---------------------
+ Two Extra Section  
+ -------------------*/
+
+
+/*----------------- 
+Section-One-Style  
+--------------------*/
+
+.extra-section-1 {
+    background-image: url(/images/New-Section/FDP-The_Vision_Website_cover.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: 2em;
+    color: white;
+    position: relative;
+}
+
+.fifa-details {
+    position: absolute;
+    top: 20em;
+    left: 10em;
+    width: 400px;
+    height: 500px;
+}
+
+.fifa-details h2 {
+    font-size: 30px;
+}
+
+.fifa-details p {
+    margin-bottom: 2em;
+}
+
+.fifa-details a {
+    text-decoration: none;
+    color: white;
+    background-color: #1277d9;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 15px;
+}
+
+
+/*--------------
+Section-two-Style  
+--------------*/
+
+.extra-sction-2 {
+    display: grid;
+    grid-template-columns: 350px repeat(2, 1fr);
+    margin-top: 5em;
+}
+
+.fifa-ranking-chart {
+    padding: 3em;
+}
+
+.men-ranking h3,
+.women-ranking h3 {
+    font-size: 30px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.men-ranking table tr td,
+.women-ranking table tr td {
+    align-content: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.table-head {
+    background-color: #e02c6ead;
+    color: rgb(255, 220, 220);
+}
+
+.country-rank {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    margin-right: 5px;
+    width: 80px;
+    height: 50px;
+}
+
+
+/*------------------
+ Footer- Section Style  
+ ----------------------*/
+
+.footer-section {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.football-logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-media-icon a {
+    text-decoration: none;
+}
+
+.fab {
+    background: #d5d5d891;
+    border-radius: 50%;
+    padding: 6px;
+    color: #969BAB;
+    margin-right: 1em;
+}
+
+.copyright-section {
+    margin: 1.2em 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*-----------------------------
+ Media-Queries For Mobile 
+--------------------------- */
+
+
+/*--------------------
+ menubar for mobile 
+ --------------------- */
+
+.mobile-menu {
+    display: none;
+}
+
+@media only screen and (max-width:688px) {
+    body {
+        max-width: 688px;
+    }
+    .menubar {
+        display: none;
+    }
+    .mobile-menu {
+        color: white;
+        display: block;
+        position: relative;
+        top: 0;
+        left: -280px;
+    }
+    .fa-bars {
+        font-size: 20px;
+    }
+    .fa-bars ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        position: absolute;
+        width: 300px;
+        background-color: #E02C6D;
+    }
+    .mobile-menu:hover ul {
+        display: block;
+    }
+    .fa-bars ul li {
+        padding: 20px;
+    }
+    .fa-bars ul li a {
+        font-family: poppins;
+        text-decoration: none;
+        color: white;
+        font-weight: 200;
+    }
+    /* headar-style  */
+    .header-info {
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .header-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-image img {
+        width: 300px;
+        height: 250px;
+    }
+    .header-details {
+        padding: 0 10vh;
+    }
+    .header-details h1 {
+        flex-wrap: wrap;
+        margin: 25px 0;
+        color: white;
+        font-size: 44px;
+        font-weight: 700;
+    }
+    /* Player-list style  */
+    .players {
+        max-width: 688px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
+    /* Highlighted-Matche-Style  */
+    .highlight-match {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        margin-top: 3em;
+    }
+    .highlight-details {
+        margin-left: 2em;
+        width: 360px;
+    }
+    .highlight-details h1 {
+        padding-right: 80px;
+        font-size: 48px;
+        color: #0A0826;
+        margin: 0;
+    }
+    .player-info.highlight {
+        padding-right: 3em;
+        margin-bottom: 1em;
+    }
+    .highlight-thumbnail img {
+        width: 400px;
+        height: 300px;
+    }
+    .highlight-thumbnail {
+        margin-left: 2em;
+    }
+    /* Extra-section  */
+    .extra-section-1 {
+        background-image: url(/images/New-Section/FDP-The_Vision_Website_cover.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        margin-top: 1;
+        max-width: 688px;
+        color: white;
+        position: relative;
+    }
+    .fifa-details {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        width: 300px;
+        height: 300px;
+    }
+    .fifa-details h2 {
+        font-size: 20px;
+    }
+    /* second-extra-section  */
+    .extra-sction-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 2em;
+    }
+    /* footer section  */
+    .footer-section {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .football-logo img {
+        width: 283.87px;
+        height: 110px;
+    }
+}
+
+
+/*--------------------
+ menubar for table 
+ --------------------- */
+
+@media (min-width:689px) and (max-width:992px) {
+    body {
+        max-width: 992px;
+    }
+    .menubar-container {
+        padding-top: 42px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menubar {
+        width: 900px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* headar-style  */
+    .head-container {
+        width: 1192px;
+        height: 677px;
+        background-color: #2D25A0;
+    }
+    .header-info {
+        width: 992px;
+        margin-left: 110px;
+        margin-top: 40px;
+    }
+    .header-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-details {
+        padding: 0 10vh;
+    }
+    .header-details h1 {
+        margin: 25px 0;
+        color: white;
+        font-size: 64px;
+        font-weight: 700;
+    }
+    .watch {
+        background-color: #E02C6D;
+        text-decoration: none;
+        padding: 10px 30px;
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+        transition: 1s;
+    }
+    /* Player-list style  */
+    .players {
+        max-width: 992px;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    /* Highlighted-Matche-Style  */
+    .highlight-match {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 40px;
+        margin-top: 3em;
+    }
+    .highlight-details {
+        margin-left: 2em;
+        width: 360px;
+    }
+    .highlight-details h1 {
+        padding-right: 80px;
+        font-size: 48px;
+        color: #0A0826;
+        margin: 0;
+    }
+    .player-info.highlight {
+        padding-right: 3em;
+        margin-bottom: 1em;
+    }
+    .highlight-thumbnail img {
+        width: 700px;
+        height: 500px;
+    }
+    .highlight-thumbnail {
+        margin-left: 2em;
+    }
+    /* Extra-section  */
+    .extra-section-1 {
+        background-image: url(/images/New-Section/FDP-The_Vision_Website_cover.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        margin-top: 1;
+        max-width: 688px;
+        color: white;
+        position: relative;
+    }
+    .fifa-details {
+        position: absolute;
+        top: 15em;
+        left: 10em;
+        width: 500px;
+        height: 400px;
+    }
+    .fifa-details h2 {
+        font-size: 30px;
+    }
+    /* second-extra-section  */
+    .extra-sction-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 2em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* footer section  */
+    .footer-section {
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .football-logo img {
+        width: 483.87px;
+        height: 210px;
+    }
+}
+
+
+}

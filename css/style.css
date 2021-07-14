@@ -407,7 +407,7 @@ Section-two-Style
         display: block;
         position: relative;
         top: 0;
-        left: -150px;
+        left: -120px;
     }
     .fa-bars {
         font-size: 30px;
@@ -417,7 +417,7 @@ Section-two-Style
         list-style: none;
         padding: 0;
         position: absolute;
-        width: 400px;
+        width: 300px;
         background-color: #080808;
         z-index: 20;
     }
@@ -436,7 +436,6 @@ Section-two-Style
     }
     /* headar-style  */
     .header-info {
-        width: 100%;
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -480,17 +479,14 @@ Section-two-Style
     }
     /* Highlighted-Matche-Style  */
     .highlight-match {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 40px;
+        display: flex;
+        flex-direction: column;
         margin-top: 3em;
     }
     .highlight-details {
         margin-left: 2em;
-        width: 360px;
     }
     .highlight-details h1 {
-        padding-right: 80px;
         font-size: 40px;
         color: #0A0826;
         margin: 0;
@@ -533,7 +529,7 @@ Section-two-Style
         flex-direction: column;
     }
     .fifa-ranking-chart {
-        padding: 10px;
+        padding: 0 0 .5em 2em;
     }
     .fifa-ranking-chart h2 {
         font-size: 20px;

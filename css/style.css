@@ -450,6 +450,10 @@ Section-two-Style
         width: 280px;
         height: 220px;
     }
+    .header-details {
+        padding: 0;
+        padding-left: 20px;
+    }
     .header-details h1 {
         margin: 25px 0;
         color: white;
@@ -485,15 +489,18 @@ Section-two-Style
         margin-top: 3em;
     }
     .highlight-details {
+        width: 80%;
         margin-left: 2em;
     }
     .highlight-details h2 {
-        font-size: 30px;
+        width: 100%;
+        font-size: 25px;
         color: #0A0826;
         margin: 0;
+        padding: 0;
     }
     .player-info.highlight {
-        padding-right: 3em;
+        padding: 0;
         margin-bottom: 1em;
     }
     .highlight-thumbnail img {
@@ -605,10 +612,14 @@ Section-two-Style
         align-items: center;
         justify-content: center;
     }
+    .header-details {
+        padding: 0;
+        padding-left: 1vh;
+    }
     .header-details h1 {
         margin: 25px 0;
         color: white;
-        font-size: 50px;
+        font-size: 45px;
         font-weight: 700;
     }
     .watch {

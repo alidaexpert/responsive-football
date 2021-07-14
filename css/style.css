@@ -233,9 +233,9 @@ player-list style
     margin-left: 12em;
 }
 
-.highlight-details h1 {
+.highlight-details h2 {
     padding-right: 80px;
-    width: 460px;
+    width: 560px;
     font-size: 48px;
     color: #0A0826;
     margin: 0;

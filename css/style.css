@@ -399,13 +399,15 @@ Section-two-Style
         padding: 0;
         position: absolute;
         width: 300px;
-        background-color: #E02C6D;
+        background-color: #080808;
+        z-index: 20;
     }
     .mobile-menu:hover ul {
         display: block;
     }
     .fa-bars ul li {
         padding: 20px;
+        ;
     }
     .fa-bars ul li a {
         font-family: poppins;
@@ -518,7 +520,7 @@ Section-two-Style
 
 
 /*--------------------
- menubar for table 
+ menubar for tab
  --------------------- */
 
 @media (min-width:689px) and (max-width:992px) {
@@ -653,7 +655,4 @@ Section-two-Style
         width: 483.87px;
         height: 210px;
     }
-}
-
-
 }
